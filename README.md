@@ -110,7 +110,9 @@ Accept: */*
 $ 
 ```
 
-Now let's set up an intercept. You'll need the HEAD version of Telepresence. If you've already installed 0.94, then you can grab [this blob](https://2962-82933315-gh.circle-artifacts.com/0/home/circleci/project/dist/telepresence) from CircleCI's artifacts storage, set the executable bit, and use it instead. In my examples, `telepresence` is 0.94, which is required for `telepresence outbound`, and `teldev` is HEAD.
+Now let's set up an intercept. You'll need the HEAD version of Telepresence. If you've already installed 0.94, then you can grab [this blob](https://3007-82933315-gh.circle-artifacts.com/0/home/circleci/project/dist/telepresence) from CircleCI's artifacts storage, set the executable bit, and use it instead. In my examples, `telepresence` is 0.94, which is required for `telepresence outbound`, and `teldev` is HEAD.
+
+**Update:** The linked blob can run both `telepresence outbound` and `telepresence intercept`. I fixed the interactive `sudo` issue that was breaking `outbound` on head.
 
 ```shell
 $ telepresence version
